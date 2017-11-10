@@ -34,7 +34,6 @@ jQuery( document ).ready( function( $ ) {
 			data: dados,
 			success: function( response ) {
 				response = JSON.parse( response );
-				console.log( response );
 				if ( response.success ) {
 					document.getElementById( 'register-event-form' ).reset();
 					$( '#success-message' ).removeClass( 'hidden' );
